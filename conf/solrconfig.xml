@@ -117,8 +117,7 @@
 
        solr.RAMDirectoryFactory is memory based and not persistent.
     -->
-  <directoryFactory name="DirectoryFactory"
-                    class="${solr.directoryFactory:solr.NRTCachingDirectoryFactory}"/>
+  <directoryFactory name="DirectoryFactory" class="solr.RAMDirectoryFactory"/>
 
   <!-- The CodecFactory for defining the format of the inverted index.
        The default implementation is SchemaCodecFactory, which is the official Lucene
