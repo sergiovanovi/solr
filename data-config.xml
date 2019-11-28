@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataConfig>
+	<dataSource 	
+		type="JdbcDataSource"
+		driver="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost/seo_dev?serverTimezone=UTC"
+		user="root"
+		password="password"
+		readOnly="true">
+	</dataSource>
+	<document>
+		<entity name="seo_texts"
+			query="select * from seo_texts">
+			<field name="id" column="id"/>
+			<field name="category_key" column="category_key"/>
+			<field name="param" column="param"/>
+			<field name="text" column="text"/>
+		</entity>
+	</document>
+</dataConfig>
